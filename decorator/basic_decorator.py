@@ -142,3 +142,52 @@ try:
     divide(10, 0)
 except ZeroDivisionError:
     pass
+
+
+print("\n" + "="*50 + "\n")
+
+# ========== 第七步：使用 functools.wraps ==========
+from functools import wraps
+
+def simple_decorator(func):
+    """一个不使用 functools.wraps 的装饰器（会覆盖原函数的元数据）"""
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
+
+@simple_decorator
+def no_wrap(x):
+    """原函数 doc: 这是没有使用 wraps 的函数"""
+    return x * 2
+
+
+def decorator_with_wraps(func):
+    """使用 functools.wraps 的装饰器（保留原函数的元数据）"""
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
+
+@decorator_with_wraps
+def with_wrap(x):
+    """原函数 doc: 这是使用 wraps 的函数"""
+    return x * 2
+
+
+print("不使用 wraps 的情况:")
+print(f"  函数名: {no_wrap.__name__}")
+print(f"  文档: {no_wrap.__doc__}")
+print(f"  是否有 __wrapped__: {hasattr(no_wrap, '__wrapped__')}")
+try:
+    print(f"  __wrapped__: {no_wrap.__wrapped__}")
+except Exception:
+    pass
+
+print("\n使用 wraps 的情况:")
+print(f"  函数名: {with_wrap.__name__}")
+print(f"  文档: {with_wrap.__doc__}")
+print(f"  是否有 __wrapped__: {hasattr(with_wrap, '__wrapped__')}")
+print(f"  __wrapped__: {getattr(with_wrap, '__wrapped__', None)}")
+
