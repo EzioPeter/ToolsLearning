@@ -1,0 +1,33 @@
+# Vim快捷键命令
+- 首次进入默认（normal模式）
+- dd:删除当前行
+- 5dd:删除从当前行开始的5行（ndd）
+- d相当于剪切
+- p粘贴
+- gg跳到起始行
+- 7gg跳到第7行
+- G跳到结束行
+- shift+4（即$）跳到行末
+- 0跳到行首
+- v:视图模式，可以选中删除
+- V:行级模式，按行选中删除
+- i输入模式：esc退出
+- I:输入模式进入行首：
+- o:在下面新建空行
+- O:在上面新建空行
+- 末行模式，必须从normal模式进：
+- :set nu设置行号
+- :set nonu取消设置行号
+- 20gg:跳到20行(normal模式)
+- /bind:查找bind，n下一个，N上一个
+
+# vscode快捷键
+- ctrl `:终端显示/关闭，同时聚焦到终端
+- ctrl b:工作目录栏显示/关闭
+- ctrl 0:聚焦到工作目录栏
+- ctrl 1:聚焦到第一个编辑器组，2,3等同理
+- ctrl tab:选择编辑器组内的文件
+- ctrl shift p -> new file/new folder:工作目录内创建文件与创建文件夹
+- alt leftarrow/rightarrow:切换同一个终端组中不同终端的焦点
+- ctrl pageup/pagedown:切换不同终端组
+- ctrl shift \:聚焦到终端组选择
