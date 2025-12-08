@@ -20,6 +20,10 @@
 - :set nonu取消设置行号
 - 20gg:跳到20行(normal模式)
 - /bind:查找bind，n下一个，N上一个
+- ctrl f:向下翻整页
+- ctrl b:向上翻整页
+- ctrl d:向下翻半页
+- ctrl u:向上翻半页
 
 # vscode快捷键
 - ctrl `:终端显示/关闭，同时聚焦到终端
