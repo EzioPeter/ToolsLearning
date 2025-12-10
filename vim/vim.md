@@ -40,4 +40,4 @@
 - ctrl shift d:点击debug调试栏
 - ctrl shift e:点击工作目录栏
 - ctrl alt i:聚焦到copilot提问输入栏
-- ctrl w q:退出当前文件
+- ctrl w q:退出当前编辑器组中聚焦的文件
