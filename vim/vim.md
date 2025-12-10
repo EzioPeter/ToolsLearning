@@ -37,3 +37,5 @@
 - ctrl pageup/pagedown:切换不同终端组
 - ctrl shift \:聚焦到终端组选择
 - ctrl shift y:聚焦到debug console
+- ctrl shift d:点击debug调试栏
+- ctrl shift e:点击工作目录栏
