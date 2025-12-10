@@ -3,6 +3,7 @@
 - dd:删除当前行
 - 5dd:删除从当前行开始的5行（ndd）
 - d相当于剪切
+- y复制
 - p粘贴
 - gg跳到起始行
 - 7gg跳到第7行
@@ -35,3 +36,4 @@
 - alt leftarrow/rightarrow:切换同一个终端组中不同终端的焦点
 - ctrl pageup/pagedown:切换不同终端组
 - ctrl shift \:聚焦到终端组选择
+- ctrl shift y:聚焦到debug console
