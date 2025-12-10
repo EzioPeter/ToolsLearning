@@ -39,3 +39,4 @@
 - ctrl shift y:聚焦到debug console
 - ctrl shift d:点击debug调试栏
 - ctrl shift e:点击工作目录栏
+- ctrl alt i:聚焦到copilot提问输入栏
